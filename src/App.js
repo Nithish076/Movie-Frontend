@@ -25,7 +25,7 @@ function App() {
   React.useEffect(() => {
     const token = localStorage.getItem("token");
     axios
-      .get(`https://backend-hyug.onrender.com/auth/validateToken?token=${token}`)
+      .get(`https://movie-backend-ea5o.onrender.com/auth/validateToken?token=${token}`)
       .then((res) => {
         if (res.data.isLogged) {
           console.log(res.data);
