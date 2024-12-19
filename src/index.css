@@ -1,0 +1,13 @@
+button,
+button:hover,
+button:active,
+button:focus {
+  outline: none;
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+.badge{
+  margin-right: 5px;
+}
