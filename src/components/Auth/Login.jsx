@@ -23,7 +23,7 @@ const Login = (props) => {
     e.preventDefault();
 
     axios
-      .post(`https://backend-hyug.onrender.com/auth/login`, login)  // Updated API endpoint if necessary
+      .post(`https://movie-backend-1-9907.onrender.com/auth/login`, login)  // Updated API endpoint if necessary
       .then((res) => {
         setAlert(res.data.message);
         if (res.data.message === "Logged In Successfully") {
