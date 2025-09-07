@@ -43,7 +43,7 @@ export default function Register() {
         if (register.password === register.repassword) {
           if (register.mobile.length === 10) {
             axios
-              .post("https://backend-hyug.onrender.com/auth/register", register)
+              .post("https://movie-backend-1-9907.onrender.com/auth/register", register)
               .then((res) => {
                 setAlert(res.data.message);
               })
