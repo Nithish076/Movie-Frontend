@@ -5,7 +5,7 @@ export default function MyBookings(props) {
   const [mybooking, setMyBookings] = React.useState([]);
   React.useEffect(() => {
     axios
-      .get(`https://backend-hyug.onrender.com/ticket/retrieveAll/${props.user.email}`)
+      .get(`https://movie-backend-1-9907.onrender.com/ticket/retrieveAll/${props.user.email}`)
       .then((res) => {
         setMyBookings(res.data);
       })
